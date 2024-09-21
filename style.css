@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(129, 14, 210);
+    color:aqua;
+    padding-left:20px;
+    height: 40px;
+}
+nav h1{
+    align-self: center;
+    padding: 10px;
+}
+
+body{
+    background-image:url("https://wallpaperaccess.com/full/8642897.gif")
+
+}
+
+.all{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(174, 216, 22);
+    font-size: 8vw;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(66, 138, 137);
+}
+.bl-0{
+    border-left: 1px;
+}
+.br-0{
+    border-right: 1px;
+}
+.bt-0{
+    border-top: 1px;
+}
+.bb-0{
+    border-bottom: 1px;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+#X{
+    padding: 10px;
+    display: flex;
+    background-color: rgb(245, 105, 143);
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    border: 4px solid rgb(7, 7, 7);
+
+}
+#O{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 4px solid rgb(9, 9, 9);
+    background-color: rgb(245, 105, 143);
+    align-items: left;
+}
+.side h1{
+    font-size: 40px;
+}
+#X h1{
+    font-size: 40px;
+    padding: 5px;
+    padding-top: 0;
+}
+#O h1{
+    font-size: 40px;
+    padding: 5px;
+    padding-top: 0;
+}
+#reset{
+    margin:5px;
+    padding:10px;
+    width:100px;
+    border-radius: 20px;
+    background-color: rgb(204, 190, 245);
+    cursor: pointer;
+}
+#xx{
+    width: 0;
+    transition:width 1s ease-in-out;
+}
+#oo{
+    transition:width 1s ease-in-out;
+    width:0;
+}
+
+@media only screen and (max-width: 850px) {
+    .all{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: repeat(3,15vw);
+        grid-template-rows: repeat(3,15vw);
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12vw;
+        cursor: pointer;
+    }
+    .side{
+        margin:20px;
+    }
+}
